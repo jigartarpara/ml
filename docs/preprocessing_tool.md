@@ -12,7 +12,7 @@ dataset = pd.read_csv('Data.csv')
 
 X = dataset.[iloc](pandas/iloc.md)[:, :-1].values
 
-y = dataset.iloc[:, -1].values
+y = dataset.[iloc](pandas/iloc.md)[:, -1].values
 
 print(X)
 
@@ -21,7 +21,7 @@ print(y)
 # Taking care of missing data
 from sklearn.impute import SimpleImputer
 
-imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
+imputer = [SimpleImputer](slearn/simpleimputer.md)(missing_values=np.nan, strategy='mean')
 
 imputer.fit(X[:, 1:3])
 
