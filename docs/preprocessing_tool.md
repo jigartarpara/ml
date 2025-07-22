@@ -21,7 +21,7 @@ print(y)
 # Taking care of missing data
 from sklearn.impute import SimpleImputer
 
-imputer = [SimpleImputer](slearn/simpleimputer.md)(missing_values=np.nan, strategy='mean')
+imputer = [SimpleImputer](sklearn/simpleimputer.md)(missing_values=np.nan, strategy='mean')
 
 imputer.fit(X[:, 1:3])
 
